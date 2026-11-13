@@ -6,6 +6,11 @@ Bản demo UI tương tác phục vụ thuyết trình dự án khởi nghiệp.
 
 ## Mở ngay
 
+**Bản trực tuyến (GitHub Pages):** https://williamsbui-fnd.github.io/AnVui/ · bản ứng dụng điện thoại: https://williamsbui-fnd.github.io/AnVui/?app=1
+
+Mỗi lần push lên nhánh `main`, workflow `.github/workflows/pages.yml` chạy kiểm tra (`npm run check`, `npm test`) rồi tự triển khai thư mục `dist/`.
+
+
 Mở `dist/index.html` bằng Chrome, Edge hoặc Safari. Toàn bộ hình, mã và font đã có trong thư mục, không cần tải thư viện ngoài. Nhấn “Đặt lại demo” trước buổi trình bày.
 
 Để thử đầy đủ chế độ ứng dụng web và service worker, chạy từ thư mục dự án:
