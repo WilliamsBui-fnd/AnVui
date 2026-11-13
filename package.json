@@ -1,0 +1,13 @@
+{
+  "name": "an-vui-demo",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Zentech",
+  "description": "An Vui by Zentech — interactive Vietnamese senior community UI prototype",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/features.js && node --check dist/sw.js",
+    "test": "node scripts/check-demo.cjs"
+  },
+  "devDependencies": { "jsdom": "30.1.3" }
+}

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#1d5641">
+<title>An Vui — Thêm bạn, thêm niềm vui</title><meta name="description" content="Cộng đồng thân thiện cho tuổi vàng. Cùng hỏi đáp, tìm bạn và mua sắm an tâm mỗi ngày. Bản demo tương tác An Vui do nhóm Zentech thực hiện."><meta name="author" content="Zentech">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="An Vui"><meta name="format-detection" content="telephone=no"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="#" data-action="go-home" aria-label="An Vui — về trang chủ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path class="leaf-a" d="M15.6 20.5C7.6 21 2.6 15.3 2.4 6.6c8.4-.4 13.4 5 13.2 13.9Z"/><path class="leaf-b" d="M16.6 16.8C16.4 8.9 20.8 4 29.6 3.4c.3 8.4-4.6 13.3-13 13.4Z"/><path class="stem" d="M16 29c-.2-4.2.1-8.4 1-12.4"/></svg><span class="wordmark">an vui<span class="brand-dot">.</span></span></a><span class="header-caption">KẾT NỐI THẾ HỆ · CHIA SẺ NIỀM VUI</span><nav class="desktop-nav" aria-label="Điều hướng bản trình bày"><button class="nav-link active" data-view="experience">Trải nghiệm app</button><button class="nav-link" data-view="business">Kinh doanh</button><button class="nav-link" data-view="launch">Ra mắt</button><button class="nav-link" data-view="campaign">Chiến dịch</button></nav><span class="demo-pill"><i></i> Bản demo tương tác</span></header>
+<main id="page"></main>
+<footer class="site-footer"><span>An Vui · Một khoảng trời thân quen cho tuổi vàng.</span><span class="footer-team"><img src="assets/zentech-mark.webp" alt="" width="18" height="18"><span>Thực hiện bởi nhóm <b>Zentech</b> · Đơn giản là sức mạnh</span></span><span>Dữ liệu minh họa · Không giao dịch hay xác thực thật <button data-action="reset-ask" class="text-link">Đặt lại demo</button></span></footer>
+<button class="zen-corner" data-action="about-zentech" aria-label="Zentech — nhóm phát triển An Vui"><img src="assets/zentech-mark.webp" alt="" width="40" height="40"><span><b>ZENTECH</b><small>Đơn giản là sức mạnh</small></span></button>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+<script src="features.js"></script>
+<script src="app.js"></script>
+</body></html>
