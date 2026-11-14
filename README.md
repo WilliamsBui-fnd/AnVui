@@ -44,6 +44,12 @@ Chức năng “Có người chỉ tận tay” cho chọn việc, khu vực, ng
 - Logo Z của Zentech luôn ở góc màn hình: nút nổi góc dưới bên trái trên máy tính/tablet, góc trên bên trái trong ứng dụng điện thoại. Bấm vào để mở giới thiệu nhóm.
 - Chữ trong app tối thiểu khoảng 14px ở cỡ chữ nhỏ nhất, nút bấm cao 52–56px. Không còn `style=""` viết trực tiếp trong mẫu HTML (trừ chiều rộng thanh tiến độ).
 
+## Nội dung và nhân vật
+
+- Trong ứng dụng, câu chữ được viết như một nền tảng đang hoạt động: tài khoản có tên, khu vực, ảnh đại diện, lịch sử trò chuyện, đánh giá, mã đơn hàng. Không còn chữ "mẫu/demo/mô phỏng" trên màn hình thành viên (có test kiểm tra).
+- Tất cả nhân vật (bác Minh, cô Hương, cô Mai, cô Lan, bác Thành, Minh Anh, Tuấn Anh) và mọi con số trong app là hư cấu. Ảnh đại diện cắt từ ảnh minh họa do AI tạo trong `dist/assets/` (xem `ASSET_SOURCES.md`).
+- Phần minh bạch giữ ở một chỗ: nhãn "Bản demo tương tác", chân trang "Dữ liệu minh họa", mục "Chế độ trình diễn" trong Tài khoản, và các nhãn "giả định" trên trang Kinh doanh/Ra mắt. Không trình bày số liệu trong app như kết quả kinh doanh thật.
+
 ## Các luồng đã triển khai
 
 - Cô bác: hướng dẫn mở đầu, ba cỡ chữ, đăng bài, đặt câu hỏi, tìm kiếm/lọc, xác nhận hữu ích, kết bạn và nhắn tin.

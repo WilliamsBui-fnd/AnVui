@@ -35,3 +35,7 @@ New fictional-character campaign artwork generated with built-in image_gen, usin
 ## Logo nhóm Zentech
 
 `dist/assets/zentech-logo.webp`, `dist/assets/zentech-mark.webp` và `brand/zentech-*.png`: logo do nhóm Zentech cung cấp (file `brand/Zentech-gioi-thieu.docx`). Ảnh đã được tách nền trắng, cắt sát viền và thu nhỏ cho web; không thay đổi hình dạng hay màu sắc.
+
+## Ảnh đại diện tài khoản
+
+`dist/assets/avatars/*.webp`: cắt từ `community.webp` (bác Minh, cô Hương, cô Mai) và `campaign-keyvisual.webp` (Minh Anh, cô Lan). Đều là nhân vật hư cấu do AI tạo, không phải người dùng thật.
