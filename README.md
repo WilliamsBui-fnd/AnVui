@@ -37,6 +37,16 @@ Tab “Chiến dịch” kể câu chuyện “Để ba mẹ không ngại hỏi
 
 Chức năng “Có người chỉ tận tay” cho chọn việc, khu vực, người hướng dẫn mẫu và điểm hẹn. Vị trí được xin quyền chủ động; GPS không lưu vào localStorage hay gửi máy chủ. Google Maps chỉ mở khi người dùng bấm liên kết. Sơ đồ/khoảng cách không phải kết quả tìm người thực tế. Yêu cầu chỉ lưu trên máy: đổi sang người trẻ để nhận mẫu, đổi về cô bác để xác nhận hoàn tất. Giá 99.000đ/45 phút và phí 20% là giả định, chưa bán dịch vụ.
 
+## Hoạt động trực tiếp khi trình diễn
+
+Chỉ cần dùng tài khoản Bác Minh là đã thấy được toàn bộ luồng:
+
+- **Đặt câu hỏi:** khoảng 2,5 giây sau, Minh Anh bắt đầu "đang soạn câu trả lời". Đến giây thứ 8, câu trả lời từng bước xuất hiện, kèm thông báo trượt xuống từ đầu màn hình. Nội dung trả lời được chọn theo từ khoá trong câu hỏi (Zalo/video, ảnh, cỡ chữ, Wi‑Fi, pin, đèn pin, OTP/lừa đảo).
+- **Đặt người hướng dẫn:** khoảng 6 giây sau, lịch hẹn tự chuyển sang "Đã xác nhận" và có thông báo.
+- **Chuông thông báo:** chấm đỏ chỉ hiện khi có thông báo chưa đọc; thông báo mới luôn nằm trên cùng.
+- **Bắt đầu lại:** huỷ mọi hoạt động đang chờ.
+- **Mã QR:** có ở trang Trải nghiệm, Ra mắt và Chiến dịch, dẫn tới `…/AnVui/?app=1`. Bấm vào mã để phóng to cho máy chiếu.
+
 ## Giao diện (design system v2)
 
 - Toàn bộ `dist/style.css` dùng chung một bộ token khai báo ở `:root`: màu thương hiệu (xanh lá An Vui, cam đất làm điểm nhấn, xanh xám Zentech), màu chữ và nền, ba tông thông báo (cảnh báo/vàng, tích cực/xanh lá, thông tin/xanh dương), bo góc, đổ bóng.
@@ -67,7 +77,7 @@ Tính năng đọc văn bản và nhập giọng nói dùng khả năng sẵn c�
 
 ## Kiểm tra
 
-JavaScript đã kiểm tra cú pháp và 31 nhóm kiểm tra DOM với jsdom, bao gồm phân quyền, chuỗi hỏi đáp, kiểm duyệt mẫu, chống cộng điểm lặp, dữ liệu nhập không trở thành HTML, kết bạn, nhắn tin, đặt thử, giả lập căn cước và công thức doanh thu.
+JavaScript đã kiểm tra cú pháp và 35 nhóm kiểm tra DOM với jsdom, bao gồm phân quyền, chuỗi hỏi đáp, kiểm duyệt mẫu, chống cộng điểm lặp, dữ liệu nhập không trở thành HTML, kết bạn, nhắn tin, đặt thử, giả lập căn cước và công thức doanh thu, hoạt động trực tiếp (đang gõ, tự trả lời, tự xác nhận lịch hẹn, thông báo) và mã QR.
 
 Trình duyệt kiểm thử không có sẵn trong môi trường thực hiện. Chưa xác nhận bố cục bằng screenshot hay thao tác trên thiết bị thật; cần mở trước trên máy dùng thuyết trình và thử cùng cô bác.
 
