@@ -47,6 +47,13 @@ Chỉ cần dùng tài khoản Bác Minh là đã thấy được toàn bộ lu�
 - **Bắt đầu lại:** huỷ mọi hoạt động đang chờ.
 - **Mã QR:** có ở trang Trải nghiệm, Ra mắt và Chiến dịch, dẫn tới `…/AnVui/?app=1`. Bấm vào mã để phóng to cho máy chiếu.
 
+## Học từng bước, giọng nói, chống lừa đảo, gia đình
+
+- **Câu trả lời từng bước:** câu trả lời có danh sách đánh số hoặc gạch đầu dòng sẽ tự tách thành thẻ cho từng bước. Mỗi thẻ có ô tích "Đã xong" và thanh tiến độ. Khi xong hết, nút "Tôi đã làm được" được làm nổi bật.
+- **Giọng nói:** mỗi bước và cả câu trả lời đều có nút "Đọc to" (tiếng Việt, đọc chậm). Màn hình đặt câu hỏi có nút lớn "Bấm để nói câu hỏi", lời nói được điền vào cả tiêu đề lẫn nội dung.
+- **Cảnh giác lừa đảo** (từ Trang chủ): ba nguyên tắc chính, công cụ kiểm tra tin nhắn theo 8 nhóm dấu hiệu, và 4 chiêu lừa hay gặp. Có thể chuyển tin nhắn thành câu hỏi gửi các cháu; dãy số từ 4 chữ số trở lên được che đi.
+- **Trang Gia đình** (`?view=family`): trang của con cháu (Anh Quân). Số liệu lấy trực tiếp từ hoạt động của bác Minh: câu hỏi, số bước đã làm, việc đã làm được, bạn mới. Con cháu có thể trả tiền món ba nhờ mua, đặt người hướng dẫn cho ba và dùng thử Gói Gia đình An Tâm. Trang không hiển thị tin nhắn riêng của ba.
+
 ## Giao diện (design system v2)
 
 - Toàn bộ `dist/style.css` dùng chung một bộ token khai báo ở `:root`: màu thương hiệu (xanh lá An Vui, cam đất làm điểm nhấn, xanh xám Zentech), màu chữ và nền, ba tông thông báo (cảnh báo/vàng, tích cực/xanh lá, thông tin/xanh dương), bo góc, đổ bóng.
@@ -77,7 +84,7 @@ Tính năng đọc văn bản và nhập giọng nói dùng khả năng sẵn c�
 
 ## Kiểm tra
 
-JavaScript đã kiểm tra cú pháp và 35 nhóm kiểm tra DOM với jsdom, bao gồm phân quyền, chuỗi hỏi đáp, kiểm duyệt mẫu, chống cộng điểm lặp, dữ liệu nhập không trở thành HTML, kết bạn, nhắn tin, đặt thử, giả lập căn cước và công thức doanh thu, hoạt động trực tiếp (đang gõ, tự trả lời, tự xác nhận lịch hẹn, thông báo) và mã QR.
+JavaScript đã kiểm tra cú pháp và 40 nhóm kiểm tra DOM với jsdom, bao gồm phân quyền, chuỗi hỏi đáp, kiểm duyệt mẫu, chống cộng điểm lặp, dữ liệu nhập không trở thành HTML, kết bạn, nhắn tin, đặt thử, giả lập căn cước và công thức doanh thu, hoạt động trực tiếp (đang gõ, tự trả lời, tự xác nhận lịch hẹn, thông báo) và mã QR.
 
 Trình duyệt kiểm thử không có sẵn trong môi trường thực hiện. Chưa xác nhận bố cục bằng screenshot hay thao tác trên thiết bị thật; cần mở trước trên máy dùng thuyết trình và thử cùng cô bác.
 
